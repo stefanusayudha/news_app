@@ -9,18 +9,18 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:name=".App"
+        android:name="com.stefanus_ayudha.news_app.presentation.App"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/singularity"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/singularity"
         android:supportsRtl="true"
         android:theme="@style/Theme.PokemonApp"
         tools:targetApi="31">
         <activity
-            android:name=".presentation.activity.main.MainActivity"
+            android:name="com.stefanus_ayudha.news_app.presentation.activity.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,13 +33,9 @@
                 android:value="" />
         </activity>
 
-        <activity
-            android:name=".presentation.activity.profile.ProfileActivity"
-            android:exported="true" />
-
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.stefanus_ayudha.pokemonapp"
+            android:authorities="com.stefanus_ayudha.news_app"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
